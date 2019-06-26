@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>(FWP701W)信用卡交易記錄查詢-查詢、明細、清除</description>
+   <name>FWP701W_QueryDetailClean</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ad5aa99a-4376-4dd8-9298-82724b3aeddd</testCaseGuid>
+</TestCaseEntity>

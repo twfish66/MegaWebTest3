@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FWP304W總公司資料審核</description>
+   <name>FWP304W_Headquater_Info_Approve</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fd4be03d-6fea-4dce-8b84-5e3b64d3c5e7</testCaseGuid>
+</TestCaseEntity>

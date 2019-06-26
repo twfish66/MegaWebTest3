@@ -1,0 +1,67 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import internal.GlobalVariable as GlobalVariable
+
+not_run: WebUI.openBrowser('')
+
+not_run: WebUI.navigateToUrl('http://192.168.30.94:8080/ewallet-manage/login?lightID=QRMP01')
+
+not_run: WebUI.maximizeWindow()
+
+'點選menu-首頁總覽'
+WebUI.click(findTestObject('Object Repository/FWP_UserManage/FWP800W_Modify/Page_QRCode/span_DashboardMenu'))
+
+WebUI.delay(1)
+
+'點選menu-使用者管理'
+WebUI.click(findTestObject('Object Repository/FWP_UserManage/FWP800W_Modify/Page_QRCode/span_UserManage'))
+
+WebUI.delay(1)
+
+'點選menu-FWP800W 角色群組管理'
+WebUI.click(findTestObject('Object Repository/FWP_UserManage/FWP800W_Modify/Page_QRCode/span_RoleGroupManage'))
+
+WebUI.delay(1)
+
+'點選角色清單'
+WebUI.click(findTestObject('Object Repository/FWP_UserManage/FWP800W_Modify/Page_FWP800W -/a_ QRMP01'))
+
+WebUI.delay(1)
+
+'點選權限設定資料維護-取消權限'
+WebUI.click(findTestObject('FWP_UserManage/FWP800W_Modify/Page_FWP800W -/input__ng-untouched ng-valid ng-empty ng-dirty ng-valid-parse'))
+
+WebUI.delay(1)
+
+'再點選權限設定資料維護-恢復權限'
+WebUI.click(findTestObject('Object Repository/FWP_UserManage/FWP800W_Modify/Page_FWP800W -/input__ng-untouched ng-valid ng-empty ng-dirty ng-valid-parse'))
+
+WebUI.delay(1)
+
+'按下修改'
+WebUI.click(findTestObject('Object Repository/FWP_UserManage/FWP800W_Modify/Page_FWP800W -/button_Modify'))
+
+WebUI.delay(1)
+
+'驗證系統顯示更新成功訊息'
+WebUI.verifyElementText(findTestObject('Object Repository/FWP_UserManage/FWP800W_Modify/Page_FWP800W -/h4_ModifyOK'), '更新成功。')
+
+'按下重新整理'
+WebUI.click(findTestObject('Object Repository/FWP_UserManage/FWP800W_Modify/Page_FWP800W -/button_Refresh'))
+
+WebUI.delay(1)
+
+'驗證重新整理成功-修改功能disable'
+WebUI.verifyElementNotClickable(findTestObject('FWP_UserManage/FWP800W_Modify/Page_FWP800W -/button_Modify'))
+

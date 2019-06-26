@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FSP100W系統管理-帳號管理-新增</description>
+   <name>FSP100W_Account_Manage_Add</name>
+   <tag>FSP100W</tag>
+   <comment>========帳號管理-新增========</comment>
+   <testCaseGuid>507a65dd-4441-4927-babc-d8e5942d147f</testCaseGuid>
+</TestCaseEntity>

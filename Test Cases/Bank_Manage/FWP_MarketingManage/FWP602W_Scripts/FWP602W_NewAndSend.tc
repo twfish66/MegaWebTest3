@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>(FWP602W)公告訊息管理-新增、送審</description>
+   <name>FWP602W_NewAndSend</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>025b1827-7dd7-4692-a247-8a18a8505d58</testCaseGuid>
+</TestCaseEntity>

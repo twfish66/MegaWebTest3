@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>New Test Data</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>ad8c18fd-076b-4a77-9895-f7c3130e4783</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>1 %E9%83%B5%E4%BB%B6%E7%99%BC%E9%80%81%E6%97%A5%E8%AA%8C%E6%9F%A5%E8%A9%A2 daily_recorder_menu mail_sent_menu</data>
+   <data>2 %E5%BE%8C%E8%87%BA%E6%93%8D%E4%BD%9C%E6%97%A5%E8%AA%8C daily_recorder_menu operate_daily_query_menu</data>
+   <data>3 %E9%9B%BB%E6%96%87%E6%97%A5%E8%AA%8C%E6%9F%A5%E8%A9%A2 daily_recorder_menu service_menu</data>
+   <data>4 %E6%8E%A8%E6%92%AD%E7%99%BC%E9%80%81%E7%B4%80%E9%8C%84%E6%9F%A5%E8%A9%A2 daily_recorder_menu notify_sent_record_menu</data>
+   <data>5 %E9%87%91%E8%9E%8D%E4%BA%A4%E6%98%93%E7%B4%80%E9%8C%84 span_TransactionRecord account_transaction_menu</data>
+   <data>6 %E4%BF%A1%E7%94%A8%E5%8D%A1%E4%BA%A4%E6%98%93%E7%B4%80%E9%8C%84 span_TransactionRecord creditcard_transaction_menu</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>exeno</name>
+      <size>6</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>function name</name>
+      <size>6</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>2</columnIndex>
+      <name>path</name>
+      <size>6</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>3</columnIndex>
+      <name>menu</name>
+      <size>6</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

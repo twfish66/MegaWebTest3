@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>(FWP504W)APP版本查詢/設定-查詢、明細、清除</description>
+   <name>FWP504W_QueryDetailClean</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7d83253f-3b8b-44e4-9704-4e84b2f94aae</testCaseGuid>
+</TestCaseEntity>

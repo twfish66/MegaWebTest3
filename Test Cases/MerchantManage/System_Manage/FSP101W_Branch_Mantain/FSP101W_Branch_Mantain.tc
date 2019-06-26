@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FSP101W分店維護-查詢/清除</description>
+   <name>FSP101W_Branch_Mantain</name>
+   <tag></tag>
+   <comment>========分店維護========</comment>
+   <testCaseGuid>3994286a-5edc-4096-9cc1-01294fe7b6a3</testCaseGuid>
+</TestCaseEntity>

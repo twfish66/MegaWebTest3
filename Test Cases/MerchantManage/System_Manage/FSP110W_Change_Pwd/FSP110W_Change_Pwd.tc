@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FSP110W變更密碼-查詢/清除</description>
+   <name>FSP110W_Change_Pwd</name>
+   <tag></tag>
+   <comment>========變更密碼========</comment>
+   <testCaseGuid>ef0d9e8b-3794-4df0-8162-b0315b78d32e</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FWP303W總公司資料管理</description>
+   <name>FWP303W_Headquater_Info_Manage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0e6cd231-8296-40a6-91a8-aa99a6994f04</testCaseGuid>
+</TestCaseEntity>

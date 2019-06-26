@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FWP906W_內部系統介接電文日誌查詢-查詢/明細/清除</description>
+   <name>FWP906W_Internal_Interface_Query</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>da3ca19d-c227-4d12-96a0-8843c5427a7a</testCaseGuid>
+</TestCaseEntity>

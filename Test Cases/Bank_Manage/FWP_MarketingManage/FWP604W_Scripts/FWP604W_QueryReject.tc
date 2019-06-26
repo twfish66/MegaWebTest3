@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>(FWP604W)公告訊息審核-查詢、退件</description>
+   <name>FWP604W_QueryReject</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9180106a-9722-47b6-a803-b76c32737fcf</testCaseGuid>
+</TestCaseEntity>

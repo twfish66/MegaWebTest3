@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FSP102W端末機綁定維護-查詢/刪除/清除</description>
+   <name>FSP102W_Terminal_Mantain</name>
+   <tag></tag>
+   <comment>========端末機綁定維護========</comment>
+   <testCaseGuid>c3e03548-db96-473d-b7f8-7111342668b4</testCaseGuid>
+</TestCaseEntity>

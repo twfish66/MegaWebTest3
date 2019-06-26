@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>(FWP500W)系統參數設定-查詢、清除</description>
+   <name>FWP500W_QueryAndClean</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>39aa6818-2344-40dd-9364-a0236792a609</testCaseGuid>
+</TestCaseEntity>

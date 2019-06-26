@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FWP300W店家資料管理-新增/修改</description>
+   <name>FWP300W_Store_Info_Manage_add</name>
+   <tag>FWP300W</tag>
+   <comment></comment>
+   <testCaseGuid>6e311e4b-e03c-4d97-b2d6-9f5f5b240169</testCaseGuid>
+</TestCaseEntity>

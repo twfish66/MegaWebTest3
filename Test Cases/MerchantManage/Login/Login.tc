@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>登入店家後台</description>
+   <name>Login</name>
+   <tag></tag>
+   <comment>========登入店家後台系統========</comment>
+   <testCaseGuid>e8f26ea3-f554-4429-a25d-9a81d34aa0fc</testCaseGuid>
+</TestCaseEntity>

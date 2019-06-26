@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FSP100W帳號管理-查詢與清除</description>
+   <name>FSP100W_Account_Manage_Query</name>
+   <tag></tag>
+   <comment>========帳號管理-查詢========</comment>
+   <testCaseGuid>18a9e9b5-c0aa-4c6d-940c-42bd37b0275a</testCaseGuid>
+</TestCaseEntity>

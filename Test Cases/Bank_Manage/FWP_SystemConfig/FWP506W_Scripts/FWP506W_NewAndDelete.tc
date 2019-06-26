@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>(FWP506W)信用卡卡面圖片上傳-新增、刪除</description>
+   <name>FWP506W_NewAndDelete</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>618c0164-97e5-450d-8aba-097cb25503ee</testCaseGuid>
+</TestCaseEntity>

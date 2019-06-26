@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FWP901W_外部系統介接電文日誌查詢-查詢/明細/清除</description>
+   <name>FWP901W_Outside_Daily_Query</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>99e9124b-1bc9-4e6f-a8a5-c24ee5e1a7fe</testCaseGuid>
+</TestCaseEntity>

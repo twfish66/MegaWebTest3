@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>(FWP506W)信用卡卡面圖片上傳-查詢、修改、清除</description>
+   <name>FWP506W_QueryModifyClean</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8df8a277-b755-42a5-8001-3714a8b05b12</testCaseGuid>
+</TestCaseEntity>

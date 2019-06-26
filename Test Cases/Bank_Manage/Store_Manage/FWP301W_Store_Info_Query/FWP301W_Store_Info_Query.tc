@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FWP301W店家管理查詢-查詢/明細/清除</description>
+   <name>FWP301W_Store_Info_Query</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ee7ae518-0e18-45e6-9a01-902e780cf9c1</testCaseGuid>
+</TestCaseEntity>

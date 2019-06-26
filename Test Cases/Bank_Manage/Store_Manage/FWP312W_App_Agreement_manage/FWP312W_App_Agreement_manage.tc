@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FWP312W_店家收款APP同意條款管理-新增/查詢/修改/明細/刪除/清除</description>
+   <name>FWP312W_App_Agreement_manage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>89cab6de-cee6-4a70-9ee4-940aaa1d6be0</testCaseGuid>
+</TestCaseEntity>

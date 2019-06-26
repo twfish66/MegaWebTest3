@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FWP311W撥款記錄調整-查詢/調整/輸出Excel/清除</description>
+   <name>FWP311W_Appropriation_Record_Adjust</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>58442d29-824a-4c77-894b-73a2539e8401</testCaseGuid>
+</TestCaseEntity>

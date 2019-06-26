@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Store_Manage_Suite" time="83" tests="2" failures="0" errors="0">
+   <testsuite name="Store_Manage_Suite" tests="2" failures="0" errors="0" time="83" timestamp="2019-05-27 15:32:03" hostname="twfish66 - LAPTOP-VV4U30VE.cht.com.tw" id="Test Suites/Bank_Manage/Store_Manage_Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\mega\\MegaWebTest\\MegaWebTest\\Reports\\Bank_Manage\\Store_Manage_Suite\\20190527_153159"/>
+         <property name="logFiles" value="C:\\mega\\MegaWebTest\\MegaWebTest\\Reports\\Bank_Manage\\Store_Manage_Suite\\20190527_153159\\execution0.log, C:\\mega\\MegaWebTest\\MegaWebTest\\Reports\\Bank_Manage\\Store_Manage_Suite\\20190527_153159\\IEDriverServer.log"/>
+         <property name="attachments" value="C:\\mega\\MegaWebTest\\MegaWebTest\\Reports\\Bank_Manage\\Store_Manage_Suite\\20190527_153159\\1558942350064.png"/>
+         <property name="hostName" value="twfish66 - LAPTOP-VV4U30VE.cht.com.tw"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.1.2.2"/>
+         <property name="browser" value="IE 11"/>
+         <property name="hostAddress" value="10.12.32.112"/>
+         <property name="sessionId" value="f9ded17a-3c5a-4322-91f7-053cbdc5f26a"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Bank_Manage/Login/Login" classname="Test Cases/Bank_Manage/Login/Login" status="PASSED">
+         <system-out><![CDATA[2019-05-27 15:32:03 - [TEST_CASE][PASSED] - Test Cases/Bank_Manage/Login/Login: Test Cases/Bank_Manage/Login/Login
+
+2019-05-27 15:32:04 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-05-27 15:32:04 - [MESSAGE][INFO] - Starting 'IE' driver
+
+2019-05-27 15:32:04 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-05-27 15:32:12 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-05-27 15:32:12 - [TEST_STEP][PASSED] - navigateToUrl("http://192.168.30.94:8080/ewallet-manage/login?lightID=QRMP01"): Navigate to 'http://192.168.30.94:8080/ewallet-manage/login?lightID=QRMP01' successfully
+
+2019-05-27 15:32:13 - [MESSAGE][PASSED] - Navigate to 'http://192.168.30.94:8080/ewallet-manage/login?lightID=QRMP01' successfully
+
+2019-05-27 15:32:13 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-05-27 15:32:13 - [MESSAGE][PASSED] - Current window maximized
+
+2019-05-27 15:32:13 - [TEST_STEP][PASSED] - click(findTestObject("Bank_manage/Common_Use/homepage")): Object: 'Object Repository/Bank_manage/Common_Use/homepage' is clicked on
+
+2019-05-27 15:32:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Common_Use/homepage' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bank_Manage/Store_Manage/FWP303W_Headquater_Info_Manage/FWP303W_Headquater_Info_Manage" classname="Test Cases/Bank_Manage/Store_Manage/FWP303W_Headquater_Info_Manage/FWP303W_Headquater_Info_Manage" status="PASSED">
+         <system-out><![CDATA[2019-05-27 15:32:15 - [TEST_CASE][PASSED] - Test Cases/Bank_Manage/Store_Manage/FWP303W_Headquater_Info_Manage/FWP303W_Headquater_Info_Manage: Test Cases/Bank_Manage/Store_Manage/FWP303W_Headquater_Info_Manage/FWP303W_Headquater_Info_Manage
+
+2019-05-27 15:32:15 - [TEST_STEP][PASSED] - "DB先進行資料update動作": null
+
+2019-05-27 15:32:15 - [TEST_STEP][PASSED] - "可以用總公司統編當條件，把關聯的總公司-特店-分店-端末-使用者清除": null
+
+2019-05-27 15:32:15 - [TEST_STEP][PASSED] - com.database.sql.connectDB("192.168.30.94", "1433", "ewallet_mega_phase1", "sa", "1qaz@WSX3edc"): com.database.sql.connectDB is PASSED
+
+2019-05-27 15:32:16 - [MESSAGE][PASSED] - com.database.sql.connectDB is PASSED
+
+2019-05-27 15:32:16 - [TEST_STEP][PASSED] - com.database.sql.execute("delete from seller_master where se_company_id IN (select c_id from company where c_fein = '53920879')"): com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [MESSAGE][PASSED] - com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [TEST_STEP][PASSED] - com.database.sql.execute("delete from consumption_merchant_branch_term_audit where cmbta_cmba_id IN (select cmba_id from consumption_merchant_branch_audit where cmba_cma_id IN (select cma_id from consumption_merchant_audit where cma_merchant_tmp_id IN (select cm_id from consumption_merchant where cm_company_id IN (select c_id from company where c_fein = '53920879'))))"): com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [MESSAGE][PASSED] - com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [TEST_STEP][PASSED] - com.database.sql.execute("delete from consumption_merchant_branch_term where cmbt_cmb_id IN (select cmb_id from consumption_merchant_branch where cmb_merchant_id IN (select cm_id from consumption_merchant where cm_company_id IN (select c_id from company where c_fein = '53920879')))"): com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [MESSAGE][PASSED] - com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [TEST_STEP][PASSED] - com.database.sql.execute("delete from consumption_merchant_branch_audit where cmba_cma_id IN (select cma_id from consumption_merchant_audit where cma_merchant_tmp_id IN (select cm_id from consumption_merchant where cm_company_id IN (select c_id from company where c_fein = '53920879')))"): com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [MESSAGE][PASSED] - com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [TEST_STEP][PASSED] - com.database.sql.execute("delete from consumption_merchant_branch where cmb_merchant_id IN (select cm_id from consumption_merchant where cm_company_id IN (select c_id from company where c_fein = '53920879'))"): com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [MESSAGE][PASSED] - com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [TEST_STEP][PASSED] - com.database.sql.execute("delete from consumption_merchant_audit where cma_merchant_tmp_id IN (select cm_id from consumption_merchant where cm_company_id IN (select c_id from company where c_fein = '53920879'))"): com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [MESSAGE][PASSED] - com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [TEST_STEP][PASSED] - com.database.sql.execute("delete from consumption_merchant where cm_company_id IN (select c_id from company where c_fein = '53920879')"): com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [MESSAGE][PASSED] - com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [TEST_STEP][PASSED] - com.database.sql.execute("delete from company_audit where  ca_c_id IN (select c_id from company where c_fein = '53920879')"): com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [MESSAGE][PASSED] - com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [TEST_STEP][PASSED] - com.database.sql.execute("delete from company where c_fein = '53920879'"): com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [MESSAGE][PASSED] - com.database.sql.execute is PASSED
+
+2019-05-27 15:32:17 - [TEST_STEP][PASSED] - com.database.sql.execute("delete from company_audit where ca_fein = '53920879'"): com.database.sql.execute is PASSED
+
+2019-05-27 15:32:18 - [MESSAGE][PASSED] - com.database.sql.execute is PASSED
+
+2019-05-27 15:32:18 - [TEST_STEP][PASSED] - com.database.sql.closeDatabaseConnection(): com.database.sql.closeDatabaseConnection is PASSED
+
+2019-05-27 15:32:18 - [MESSAGE][PASSED] - com.database.sql.closeDatabaseConnection is PASSED
+
+2019-05-27 15:32:18 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-27 15:32:20 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-27 15:32:20 - [TEST_STEP][PASSED] - click(findTestObject("Bank_manage/Common_Use/homepage")): Object: 'Object Repository/Bank_manage/Common_Use/homepage' is clicked on
+
+2019-05-27 15:32:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Common_Use/homepage' is clicked on
+
+2019-05-27 15:32:21 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-27 15:32:23 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-27 15:32:23 - [TEST_STEP][PASSED] - click(findTestObject("Bank_manage/Store_manage/Store_info_manage_add/store_manage")): Object: 'Object Repository/Bank_manage/Store_manage/Store_info_manage_add/store_manage' is clicked on
+
+2019-05-27 15:32:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Store_info_manage_add/store_manage' is clicked on
+
+2019-05-27 15:32:24 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-27 15:32:25 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-27 15:32:25 - [TEST_STEP][PASSED] - click(findTestObject("Bank_manage/Store_manage/Headquater_Info_Manage/headquater_info_menu")): Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/headquater_info_menu' is clicked on
+
+2019-05-27 15:32:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/headquater_info_menu' is clicked on
+
+2019-05-27 15:32:28 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-27 15:32:30 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-27 15:32:30 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+2019-05-27 15:32:30 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\mega\\MegaWebTest\\MegaWebTest\\Reports\\Bank_Manage\\Store_Manage_Suite\\20190527_153159\\1558942350064.png]]
+
+2019-05-27 15:32:30 - [TEST_STEP][PASSED] - click(findTestObject("Bank_manage/Store_manage/Store_info_manage_add/add_button")): Object: 'Object Repository/Bank_manage/Store_manage/Store_info_manage_add/add_button' is clicked on
+
+2019-05-27 15:32:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Store_info_manage_add/add_button' is clicked on
+
+2019-05-27 15:32:31 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-27 15:32:33 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-27 15:32:33 - [TEST_STEP][PASSED] - if (UserScriptorKeyin == 1): null
+
+2019-05-27 15:32:34 - [TEST_STEP][PASSED] - fein_id = "53920879": null
+
+2019-05-27 15:32:34 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_fein"), fein_id): Text '53920879' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_fein'
+
+2019-05-27 15:32:34 - [MESSAGE][PASSED] - Text '53920879' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_fein'
+
+2019-05-27 15:32:34 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_name"), "回歸測試總公司"): Text '回歸測試總公司' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_name'
+
+2019-05-27 15:32:35 - [MESSAGE][PASSED] - Text '回歸測試總公司' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_name'
+
+2019-05-27 15:32:35 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/select_"), "Y", true): All options with value 'Y' are selected in object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/select_'  using regular expression
+
+2019-05-27 15:32:36 - [MESSAGE][PASSED] - All options with value 'Y' are selected in object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/select_'  using regular expression
+
+2019-05-27 15:32:36 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_QR Code_ca_admin_email"), "tw@gmail.com"): Text 'tw@gmail.com' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_QR Code_ca_admin_email'
+
+2019-05-27 15:32:37 - [MESSAGE][PASSED] - Text 'tw@gmail.com' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_QR Code_ca_admin_email'
+
+2019-05-27 15:32:37 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_admin_mobile"), "0977878333"): Text '0977878333' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_admin_mobile'
+
+2019-05-27 15:32:38 - [MESSAGE][PASSED] - Text '0977878333' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_admin_mobile'
+
+2019-05-27 15:32:38 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/select__1"), "Y", true): All options with value 'Y' are selected in object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/select__1'  using regular expression
+
+2019-05-27 15:32:39 - [MESSAGE][PASSED] - All options with value 'Y' are selected in object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/select__1'  using regular expression
+
+2019-05-27 15:32:39 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_IP_ca_source_ip"), "10.10.10.10"): Text '10.10.10.10' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_IP_ca_source_ip'
+
+2019-05-27 15:32:40 - [MESSAGE][PASSED] - Text '10.10.10.10' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_IP_ca_source_ip'
+
+2019-05-27 15:32:40 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_()_ca_pos_url"), "http://a.b.c.fd"): Text 'http://a.b.c.fd' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_()_ca_pos_url'
+
+2019-05-27 15:32:40 - [MESSAGE][PASSED] - Text 'http://a.b.c.fd' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_()_ca_pos_url'
+
+2019-05-27 15:32:40 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_()_ca_neg_url"), "http://a.b.c.fg"): Text 'http://a.b.c.fg' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_()_ca_neg_url'
+
+2019-05-27 15:32:41 - [MESSAGE][PASSED] - Text 'http://a.b.c.fg' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_()_ca_neg_url'
+
+2019-05-27 15:32:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_is_set_bank_statement_y")): Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_is_set_bank_statement_y' is clicked on
+
+2019-05-27 15:32:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_is_set_bank_statement_y' is clicked on
+
+2019-05-27 15:32:42 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_bank_statement_email"), "bb@gmail.com"): Text 'bb@gmail.com' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_bank_statement_email'
+
+2019-05-27 15:32:43 - [MESSAGE][PASSED] - Text 'bb@gmail.com' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_bank_statement_email'
+
+2019-05-27 15:32:43 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/select_FTPSFTP"), "FTP", true): All options with value 'FTP' are selected in object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/select_FTPSFTP'  using regular expression
+
+2019-05-27 15:32:44 - [MESSAGE][PASSED] - All options with value 'FTP' are selected in object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/select_FTPSFTP'  using regular expression
+
+2019-05-27 15:32:44 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_(IP)_ca_ftp_ip"), "10.10.10.10"): Text '10.10.10.10' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_(IP)_ca_ftp_ip'
+
+2019-05-27 15:32:45 - [MESSAGE][PASSED] - Text '10.10.10.10' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_(IP)_ca_ftp_ip'
+
+2019-05-27 15:32:45 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_(Port)_ca_ftp_port"), "21"): Text '21' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_(Port)_ca_ftp_port'
+
+2019-05-27 15:32:45 - [MESSAGE][PASSED] - Text '21' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_(Port)_ca_ftp_port'
+
+2019-05-27 15:32:45 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_()_ca_ftp_account"), "bb"): Text 'bb' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_()_ca_ftp_account'
+
+2019-05-27 15:32:46 - [MESSAGE][PASSED] - Text 'bb' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_()_ca_ftp_account'
+
+2019-05-27 15:32:46 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_()_ca_ftp_password"), "5SS5sXGxylg="): Text ****** has been set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_()_ca_ftp_password'
+
+2019-05-27 15:32:46 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_()_ca_ftp_password'
+
+2019-05-27 15:32:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/save_button")): Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/save_button' is clicked on
+
+2019-05-27 15:32:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/save_button' is clicked on
+
+2019-05-27 15:32:47 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-27 15:32:49 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-27 15:32:49 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Bank_manage/Common_Use/Messagebox/query_message"), QueryResultMessage): Actual text and expected text of test object 'Object Repository/Bank_manage/Common_Use/Messagebox/query_message' are matched.
+
+2019-05-27 15:32:50 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Bank_manage/Common_Use/Messagebox/query_message' are matched.
+
+2019-05-27 15:32:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/div_17392037")): Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/div_17392037' is clicked on
+
+2019-05-27 15:32:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/div_17392037' is clicked on
+
+2019-05-27 15:32:51 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/modify_button")): Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/modify_button' is clicked on
+
+2019-05-27 15:32:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/modify_button' is clicked on
+
+2019-05-27 15:32:52 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Bank_manage/Store_manage/Headquater_Info_Manage/send_approve_button"), 0): Scroll to object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/send_approve_button' successfully
+
+2019-05-27 15:32:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-05-27 15:32:52 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/send_approve_button' successfully
+
+2019-05-27 15:32:52 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/send_approve_button")): Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/send_approve_button' is clicked on
+
+2019-05-27 15:32:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/send_approve_button' is clicked on
+
+2019-05-27 15:32:53 - [TEST_STEP][NOT_RUN] - verifyElementText(findTestObject("Bank_manage/Store_manage/Headquater_Info_Manage/div_confirm_approve"), SendApproveConfirmMessage): NOT_RUN: verifyElementText(findTestObject("Bank_manage/Store_manage/Headquater_Info_Manage/div_confirm_approve"), SendApproveConfirmMessage)
+
+2019-05-27 15:32:53 - [MESSAGE][NOT_RUN] - NOT_RUN: verifyElementText(findTestObject("Bank_manage/Store_manage/Headquater_Info_Manage/div_confirm_approve"), SendApproveConfirmMessage)
+
+2019-05-27 15:32:53 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-27 15:32:55 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-27 15:32:55 - [TEST_STEP][PASSED] - click(findTestObject("Bank_manage/Store_manage/Headquater_Info_Manage/send_appve_confirm_button1")): Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/send_appve_confirm_button1' is clicked on
+
+2019-05-27 15:32:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/send_appve_confirm_button1' is clicked on
+
+2019-05-27 15:32:56 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__searchca_fein"), fein_id): Text '53920879' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__searchca_fein'
+
+2019-05-27 15:32:57 - [MESSAGE][PASSED] - Text '53920879' is set on object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__searchca_fein'
+
+2019-05-27 15:32:57 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-27 15:32:59 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-27 15:32:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/query_button")): Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/query_button' is clicked on
+
+2019-05-27 15:33:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/query_button' is clicked on
+
+2019-05-27 15:33:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/div__1")): Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/div__1' is clicked on
+
+2019-05-27 15:33:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/div__1' is clicked on
+
+2019-05-27 15:33:01 - [TEST_STEP][PASSED] - scrollToPosition(50, 50): Browser is scrolled to position x = 50, y = 50
+
+2019-05-27 15:33:02 - [MESSAGE][PASSED] - Browser is scrolled to position x = 50, y = 50
+
+2019-05-27 15:33:02 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/deltail_button")): Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/deltail_button' is clicked on
+
+2019-05-27 15:33:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/deltail_button' is clicked on
+
+2019-05-27 15:33:03 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-27 15:33:05 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-27 15:33:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/cancel_button")): Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/cancel_button' is clicked on
+
+2019-05-27 15:33:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/cancel_button' is clicked on
+
+2019-05-27 15:33:06 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-27 15:33:08 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-27 15:33:08 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/clear_button")): Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/clear_button' is clicked on
+
+2019-05-27 15:33:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/clear_button' is clicked on
+
+2019-05-27 15:33:09 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-27 15:33:11 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-27 15:33:11 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/select_no_send_approve"), "0", true): All options with value '0' are selected in object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/select_no_send_approve'  using regular expression
+
+2019-05-27 15:33:12 - [MESSAGE][PASSED] - All options with value '0' are selected in object 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/select_no_send_approve'  using regular expression
+
+2019-05-27 15:33:12 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-27 15:33:14 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-27 15:33:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/query_button")): Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/query_button' is clicked on
+
+2019-05-27 15:33:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/query_button' is clicked on
+
+2019-05-27 15:33:16 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-27 15:33:18 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-27 15:33:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/div_27235901")): Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/div_27235901' is clicked on
+
+2019-05-27 15:33:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/div_27235901' is clicked on
+
+2019-05-27 15:33:19 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-27 15:33:21 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-27 15:33:21 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/delete_button")): Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/delete_button' is clicked on
+
+2019-05-27 15:33:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/delete_button' is clicked on
+
+2019-05-27 15:33:22 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-27 15:33:24 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-27 15:33:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/confirm_delete_button")): Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/confirm_delete_button' is clicked on
+
+2019-05-27 15:33:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/confirm_delete_button' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-05-27 15:32:03 - [TEST_SUITE][PASSED] - Store_Manage_Suite: Test Cases/Bank_Manage/Store_Manage/FWP303W_Headquater_Info_Manage/FWP303W_Headquater_Info_Manage]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

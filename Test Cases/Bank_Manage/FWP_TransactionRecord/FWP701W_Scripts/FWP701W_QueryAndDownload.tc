@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>(FWP701W)信用卡交易記錄查詢-查詢、輸出Excel</description>
+   <name>FWP701W_QueryAndDownload</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f74e9aee-d6e3-47a9-98ce-1ac4291f5cc0</testCaseGuid>
+</TestCaseEntity>

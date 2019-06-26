@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FWP310W店家使用者帳號管理-查詢/修改/明細/清除</description>
+   <name>FWP310W_Store_User_manage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>946f3394-d733-4ba3-a86d-ef4add8fa2f4</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FSP900W公告訊息-查詢/清除</description>
+   <name>FSP900W_Announce_Message</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0ef33cc7-5ca2-4a55-92d9-f35ef59bcb9c</testCaseGuid>
+</TestCaseEntity>

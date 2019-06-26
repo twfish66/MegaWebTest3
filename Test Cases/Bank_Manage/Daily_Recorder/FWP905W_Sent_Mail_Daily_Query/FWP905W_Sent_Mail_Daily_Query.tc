@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FWP905W_郵件發送紀錄查詢-查詢/明細/重送/清除</description>
+   <name>FWP905W_Sent_Mail_Daily_Query</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a63f28e2-49ce-4bc1-822d-1a9584ba8e87</testCaseGuid>
+</TestCaseEntity>

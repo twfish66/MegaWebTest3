@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FWP307W手續費結帳明細-查詢/輸出Excel/下載明細/全部明細下載/清除</description>
+   <name>FWP307W_Fee_Settele_Detail</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>17d86bcf-aa42-4dd0-9f0e-960638d1edf2</testCaseGuid>
+</TestCaseEntity>

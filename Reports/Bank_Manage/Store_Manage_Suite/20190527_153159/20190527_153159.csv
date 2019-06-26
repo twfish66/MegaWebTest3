@@ -1,0 +1,81 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Store_Manage_Suite,IE 11,,,2019-05-27 15:32:03,2019-05-27 15:33:26,1m - 23.170s,PASSED
+,,,,,,,
+Test Cases/Bank_Manage/Login/Login,IE 11,進入銀行後台,,2019-05-27 15:32:03,2019-05-27 15:32:15,11.604s,PASSED
+"openBrowser("""")",IE 11,,,2019-05-27 15:32:04,2019-05-27 15:32:12,7.900s,PASSED
+"navigateToUrl(""http://192.168.30.94:8080/ewallet-manage/login?lightID=QRMP01"")",IE 11,,,2019-05-27 15:32:12,2019-05-27 15:32:13,1.658s,PASSED
+maximizeWindow(),IE 11,,,2019-05-27 15:32:13,2019-05-27 15:32:13,0.124s,PASSED
+"click(findTestObject(""Bank_manage/Common_Use/homepage""))",IE 11,首頁總攬,,2019-05-27 15:32:13,2019-05-27 15:32:15,1.337s,PASSED
+,,,,,,,
+Test Cases/Bank_Manage/Store_Manage/FWP303W_Headquater_Info_Manage/FWP303W_Headquater_Info_Manage,IE 11,FWP303W總公司資料管理,,2019-05-27 15:32:15,2019-05-27 15:33:25,1m - 10.402s,PASSED
+"""DB先進行資料update動作""",IE 11,,,2019-05-27 15:32:15,2019-05-27 15:32:15,0.002s,PASSED
+"""可以用總公司統編當條件，把關聯的總公司-特店-分店-端末-使用者清除""",IE 11,,,2019-05-27 15:32:15,2019-05-27 15:32:15,0.000s,PASSED
+"com.database.sql.connectDB(""192.168.30.94"", ""1433"", ""ewallet_mega_phase1"", ""sa"", ""1qaz@WSX3edc"")",IE 11,請將統編53920879替換為欲清除的總公司統編，需依序執行。,,2019-05-27 15:32:15,2019-05-27 15:32:16,1.051s,PASSED
+"com.database.sql.execute(""delete from seller_master where se_company_id IN (select c_id from company where c_fein = '53920879')"")",IE 11,清除 seller_master,,2019-05-27 15:32:16,2019-05-27 15:32:17,0.354s,PASSED
+"com.database.sql.execute(""delete from consumption_merchant_branch_term_audit where cmbta_cmba_id IN (select cmba_id from consumption_merchant_branch_audit where cmba_cma_id IN (select cma_id from consumption_merchant_audit where cma_merchant_tmp_id IN (select cm_id from consumption_merchant where cm_company_id IN (select c_id from company where c_fein = '53920879'))))"")",IE 11,清除 consumption_merchant_branch_term_audit,,2019-05-27 15:32:17,2019-05-27 15:32:17,0.295s,PASSED
+"com.database.sql.execute(""delete from consumption_merchant_branch_term where cmbt_cmb_id IN (select cmb_id from consumption_merchant_branch where cmb_merchant_id IN (select cm_id from consumption_merchant where cm_company_id IN (select c_id from company where c_fein = '53920879')))"")",IE 11,清除 consumption_merchant_branch_term,,2019-05-27 15:32:17,2019-05-27 15:32:17,0.120s,PASSED
+"com.database.sql.execute(""delete from consumption_merchant_branch_audit where cmba_cma_id IN (select cma_id from consumption_merchant_audit where cma_merchant_tmp_id IN (select cm_id from consumption_merchant where cm_company_id IN (select c_id from company where c_fein = '53920879')))"")",IE 11,清除 consumption_merchant_branch_audit,,2019-05-27 15:32:17,2019-05-27 15:32:17,0.091s,PASSED
+"com.database.sql.execute(""delete from consumption_merchant_branch where cmb_merchant_id IN (select cm_id from consumption_merchant where cm_company_id IN (select c_id from company where c_fein = '53920879'))"")",IE 11,清除 consumption_merchant_branch,,2019-05-27 15:32:17,2019-05-27 15:32:17,0.032s,PASSED
+"com.database.sql.execute(""delete from consumption_merchant_audit where cma_merchant_tmp_id IN (select cm_id from consumption_merchant where cm_company_id IN (select c_id from company where c_fein = '53920879'))"")",IE 11,清除 consumption_merchant_audit,,2019-05-27 15:32:17,2019-05-27 15:32:17,0.071s,PASSED
+"com.database.sql.execute(""delete from consumption_merchant where cm_company_id IN (select c_id from company where c_fein = '53920879')"")",IE 11,清除 consumption_merchant,,2019-05-27 15:32:17,2019-05-27 15:32:17,0.011s,PASSED
+"com.database.sql.execute(""delete from company_audit where  ca_c_id IN (select c_id from company where c_fein = '53920879')"")",IE 11,清除 company_audit,,2019-05-27 15:32:17,2019-05-27 15:32:17,0.079s,PASSED
+"com.database.sql.execute(""delete from company where c_fein = '53920879'"")",IE 11,清除 company,,2019-05-27 15:32:17,2019-05-27 15:32:17,0.005s,PASSED
+"com.database.sql.execute(""delete from company_audit where ca_fein = '53920879'"")",IE 11,清除 未審核之company_audit,,2019-05-27 15:32:17,2019-05-27 15:32:18,0.103s,PASSED
+com.database.sql.closeDatabaseConnection(),IE 11,,,2019-05-27 15:32:18,2019-05-27 15:32:18,0.000s,PASSED
+delay(2),IE 11,,,2019-05-27 15:32:18,2019-05-27 15:32:20,2.070s,PASSED
+"click(findTestObject(""Bank_manage/Common_Use/homepage""))",IE 11,首頁總攬,,2019-05-27 15:32:20,2019-05-27 15:32:21,0.986s,PASSED
+delay(2),IE 11,,,2019-05-27 15:32:21,2019-05-27 15:32:23,2.005s,PASSED
+"click(findTestObject(""Bank_manage/Store_manage/Store_info_manage_add/store_manage""))",IE 11,點店家管理,,2019-05-27 15:32:23,2019-05-27 15:32:24,1.127s,PASSED
+delay(1),IE 11,,,2019-05-27 15:32:24,2019-05-27 15:32:25,1.005s,PASSED
+"click(findTestObject(""Bank_manage/Store_manage/Headquater_Info_Manage/headquater_info_menu""))",IE 11,點總公司資料管理,,2019-05-27 15:32:25,2019-05-27 15:32:28,2.807s,PASSED
+delay(2),IE 11,,,2019-05-27 15:32:28,2019-05-27 15:32:30,2.003s,PASSED
+takeScreenshot(),IE 11,,,2019-05-27 15:32:30,2019-05-27 15:32:30,0.202s,PASSED
+"click(findTestObject(""Bank_manage/Store_manage/Store_info_manage_add/add_button""))",IE 11,點新增按鈕,,2019-05-27 15:32:30,2019-05-27 15:32:31,1.490s,PASSED
+delay(2),IE 11,,,2019-05-27 15:32:31,2019-05-27 15:32:33,2.002s,PASSED
+if (UserScriptorKeyin == 1),IE 11,,,2019-05-27 15:32:33,2019-05-27 15:32:34,0.308s,PASSED
+"setText(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_fein""), fein_id)",IE 11,,,2019-05-27 15:32:34,2019-05-27 15:32:34,0.855s,PASSED
+"setText(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_name""), ""回歸測試總公司"")",IE 11,,,2019-05-27 15:32:34,2019-05-27 15:32:35,0.561s,PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/select_""), ""Y"", true)",IE 11,QRCODE行動支付系統,,2019-05-27 15:32:35,2019-05-27 15:32:36,1.529s,PASSED
+"setText(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_QR Code_ca_admin_email""), ""tw@gmail.com"")",IE 11,,,2019-05-27 15:32:36,2019-05-27 15:32:37,0.591s,PASSED
+"setText(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_admin_mobile""), ""0977878333"")",IE 11,,,2019-05-27 15:32:37,2019-05-27 15:32:38,0.608s,PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/select__1""), ""Y"", true)",IE 11,串接註記,,2019-05-27 15:32:38,2019-05-27 15:32:39,1.267s,PASSED
+"setText(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_IP_ca_source_ip""), ""10.10.10.10"")",IE 11,,,2019-05-27 15:32:39,2019-05-27 15:32:40,0.623s,PASSED
+"setText(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_()_ca_pos_url""), ""http://a.b.c.fd"")",IE 11,,,2019-05-27 15:32:40,2019-05-27 15:32:40,0.644s,PASSED
+"setText(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_()_ca_neg_url""), ""http://a.b.c.fg"")",IE 11,,,2019-05-27 15:32:40,2019-05-27 15:32:41,0.660s,PASSED
+"click(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_is_set_bank_statement_y""))",IE 11,使否設定對帳資訊,,2019-05-27 15:32:41,2019-05-27 15:32:42,1.127s,PASSED
+"setText(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__ca_bank_statement_email""), ""bb@gmail.com"")",IE 11,,,2019-05-27 15:32:42,2019-05-27 15:32:43,0.614s,PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/select_FTPSFTP""), ""FTP"", true)",IE 11,,,2019-05-27 15:32:43,2019-05-27 15:32:44,1.271s,PASSED
+"setText(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_(IP)_ca_ftp_ip""), ""10.10.10.10"")",IE 11,,,2019-05-27 15:32:44,2019-05-27 15:32:45,0.605s,PASSED
+"setText(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_(Port)_ca_ftp_port""), ""21"")",IE 11,,,2019-05-27 15:32:45,2019-05-27 15:32:45,0.546s,PASSED
+"setText(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_()_ca_ftp_account""), ""bb"")",IE 11,,,2019-05-27 15:32:45,2019-05-27 15:32:46,0.548s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input_()_ca_ftp_password""), ""5SS5sXGxylg="")",IE 11,,,2019-05-27 15:32:46,2019-05-27 15:32:46,0.653s,PASSED
+"click(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/save_button""))",IE 11,,,2019-05-27 15:32:46,2019-05-27 15:32:47,1.042s,PASSED
+delay(2),IE 11,,,2019-05-27 15:32:47,2019-05-27 15:32:49,2.002s,PASSED
+"verifyElementText(findTestObject(""Bank_manage/Common_Use/Messagebox/query_message""), QueryResultMessage)",IE 11,,,2019-05-27 15:32:49,2019-05-27 15:32:50,0.246s,PASSED
+"click(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/div_17392037""))",IE 11,,,2019-05-27 15:32:50,2019-05-27 15:32:51,1.261s,PASSED
+"click(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/modify_button""))",IE 11,,,2019-05-27 15:32:51,2019-05-27 15:32:52,1.180s,PASSED
+"scrollToElement(findTestObject(""Bank_manage/Store_manage/Headquater_Info_Manage/send_approve_button""), 0)",IE 11,,,2019-05-27 15:32:52,2019-05-27 15:32:52,0.202s,PASSED
+"click(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/send_approve_button""))",IE 11,點送審,,2019-05-27 15:32:52,2019-05-27 15:32:53,1.020s,PASSED
+"verifyElementText(findTestObject(""Bank_manage/Store_manage/Headquater_Info_Manage/div_confirm_approve""), SendApproveConfirmMessage)",IE 11,,,2019-05-27 15:32:53,2019-05-27 15:32:53,0.002s,NOT_RUN
+delay(2),IE 11,,,2019-05-27 15:32:53,2019-05-27 15:32:55,2.003s,PASSED
+"click(findTestObject(""Bank_manage/Store_manage/Headquater_Info_Manage/send_appve_confirm_button1""))",IE 11,,,2019-05-27 15:32:55,2019-05-27 15:32:56,1.232s,PASSED
+"setText(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/input__searchca_fein""), fein_id)",IE 11,,,2019-05-27 15:32:56,2019-05-27 15:32:57,0.833s,PASSED
+delay(2),IE 11,,,2019-05-27 15:32:57,2019-05-27 15:32:59,2.002s,PASSED
+"click(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/query_button""))",IE 11,,,2019-05-27 15:32:59,2019-05-27 15:33:00,1.134s,PASSED
+"click(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/div__1""))",IE 11,,,2019-05-27 15:33:00,2019-05-27 15:33:01,1.047s,PASSED
+"scrollToPosition(50, 50)",IE 11,,,2019-05-27 15:33:01,2019-05-27 15:33:02,0.075s,PASSED
+"click(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/deltail_button""))",IE 11,點明細,,2019-05-27 15:33:02,2019-05-27 15:33:03,1.098s,PASSED
+delay(2),IE 11,,,2019-05-27 15:33:03,2019-05-27 15:33:05,2.002s,PASSED
+"click(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/cancel_button""))",IE 11,點確定,,2019-05-27 15:33:05,2019-05-27 15:33:06,1.074s,PASSED
+delay(2),IE 11,,,2019-05-27 15:33:06,2019-05-27 15:33:08,2.002s,PASSED
+"click(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/clear_button""))",IE 11,點清除,,2019-05-27 15:33:08,2019-05-27 15:33:09,1.046s,PASSED
+delay(2),IE 11,,,2019-05-27 15:33:09,2019-05-27 15:33:11,2.001s,PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/select_no_send_approve""), ""0"", true)",IE 11,選擇未送審,,2019-05-27 15:33:11,2019-05-27 15:33:12,1.624s,PASSED
+delay(2),IE 11,,,2019-05-27 15:33:12,2019-05-27 15:33:14,2.001s,PASSED
+"click(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/query_button""))",IE 11,點查詢,,2019-05-27 15:33:14,2019-05-27 15:33:16,1.195s,PASSED
+delay(2),IE 11,,,2019-05-27 15:33:16,2019-05-27 15:33:18,2.002s,PASSED
+"click(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/div_27235901""))",IE 11,,,2019-05-27 15:33:18,2019-05-27 15:33:19,1.154s,PASSED
+delay(2),IE 11,,,2019-05-27 15:33:19,2019-05-27 15:33:21,2.003s,PASSED
+"click(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/delete_button""))",IE 11,點刪除,,2019-05-27 15:33:21,2019-05-27 15:33:22,1.330s,PASSED
+delay(2),IE 11,,,2019-05-27 15:33:22,2019-05-27 15:33:24,2.002s,PASSED
+"click(findTestObject(""Object Repository/Bank_manage/Store_manage/Headquater_Info_Manage/confirm_delete_button""))",IE 11,,,2019-05-27 15:33:24,2019-05-27 15:33:25,1.119s,PASSED

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>FWP907W_推播發送記錄檔-查詢/明細/重送/清除</description>
+   <name>FWP907W_Notify_Sent_Record_Query</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f9f269b9-7104-434d-ba1d-0d6edea90eaa</testCaseGuid>
+</TestCaseEntity>

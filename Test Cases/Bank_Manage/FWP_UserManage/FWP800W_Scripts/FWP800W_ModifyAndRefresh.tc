@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>(FWP800W)角色群組管理-修改、重新整理</description>
+   <name>FWP800W_ModifyAndRefresh</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ca97dc79-64e7-4bf8-8217-c58548335e5a</testCaseGuid>
+</TestCaseEntity>
